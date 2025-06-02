@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    @* <meta charset="utf-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -9,8 +9,9 @@
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="~/assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="~/css/styles.css" rel="stylesheet" /> *@
+    <link href="~/css/styles.css" rel="stylesheet" />
 </head>
+
 <body>
     <!-- Responsive navbar-->
     <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -28,18 +29,25 @@
         </div>
     </nav>-->
     <!-- page header with logo and tagline-->
-    <header class="py-5 bg-light border-bottom mb-4">
-        <div class="container">
-            <div class="text-center my-5">
-                <h1 class="fw-bolder">welcome to blog home!</h1>
-                <p class="lead mb-0">a bootstrap 5 starter layout for your next blog homepage</p>
-            </div>
-        </div>
+    <header style="background-color: #0a1a2f;">
+        <table style="width: 100%">
+            <tr>
+                <td style="vertical-align: bottom">
+                        <img src="~/img/StubbyQ_logo.png" alt="Stubby-Q Logo" style="height: 60px;" />
+                </td>
+                <td style="text-align: right; vertical-align: bottom">
+                    <form class="d-flex align-items-center" style="float: right" role="search">
+                        <input class="form-control form-control-sm me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light btn-sm" type="submit">Go</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
     </header>
     <!-- page content-->
     <div class="container">
         @RenderBody()
-        <div class="row">
+        @* <div class="row">
             <!-- Blog entries-->
             <div class="col-lg-8">
                 <!-- Featured blog post-->
@@ -153,7 +161,7 @@
                     <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
                 </div>
             </div>
-        </div>
+        </div> *@
     </div>
     <!-- Footer-->
     <footer class="py-5 bg-dark">
