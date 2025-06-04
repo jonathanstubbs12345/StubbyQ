@@ -5,3 +5,8 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+
+function toggleSubMenu(menuId) {
+    const subMenu = document.getElementById(menuId + 'SubMenu');
+    subMenu.style.display = subMenu.style.display === 'none' ? 'block' : 'none';
+}
