@@ -10,6 +10,11 @@
     <link rel="icon" type="image/x-icon" href="~/assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="~/css/site.css" rel="stylesheet" />
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="~/scripts.js" asp-append-version="true"></script>
 </head>
 
 <body>
@@ -18,7 +23,7 @@
         <table style="width: 100%">
             <tr>
                 <td style="vertical-align: bottom">
-                        <img src="~/img/StubbyQ_logo.png" alt="Stubby-Q Logo" style="height: 60px;" />
+                    <a href="/"><img src="~/img/StubbyQ_logo.png" alt="Stubby-Q Logo" style="height: 60px;" /></a>
                 </td>
                 <td style="text-align: right; vertical-align: bottom">
                     <form class="d-flex align-items-center" style="float: right" role="search">
@@ -31,7 +36,6 @@
     </header>
     <!-- page content-->
     <div class="container">
-        <div>
             <table style="width: 100%;  height: 75vh">
                 <tr style="height: 100%">
                     <td class="sidebar_cell">
@@ -40,54 +44,54 @@
                             <h5 class="sidebar_headline">Stubby-Q Recipes</h5>
                             <ul>
                                 <li>
-                                    <a href="/Recipes" class="sidebar_image_link"><img class="sidebar_image" src="~/img/beef_recipes.png" alt="Beef Recipes" /></a>
+                                    <a href="/BeefRecipes" class="sidebar_image_link"><img class="sidebar_image" src="~/img/beef_recipes.png" alt="Beef Recipes" /></a>
                                     <a href="javascript:void(0);" class="sidebar_main-link" onclick="toggleSubMenu('beef')">Beef</a>
                                     <div id="beefSubMenu" style="display: none;">
                                         <ul>
-                                            <li><a href="/brisket" class="sidebar_sub-link">Brisket</a></li>
-                                            <li><a href="/burgers" class="sidebar_sub-link">Burgers</a></li>
+                                            <li><a href="/BeefRecipes/Brisket" class="sidebar_sub-link">Brisket</a></li>
+                                            <li><a href="/BeefRecipes/Burgers" class="sidebar_sub-link">Burgers</a></li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="/Recipes" class="sidebar_image_link"><img class="sidebar_image" src="~/img/pork_recipes.png" alt="Pork Recipes" /></a>
+                                    <a href="/PorkRecipes" class="sidebar_image_link"><img class="sidebar_image" src="~/img/pork_recipes.png" alt="Pork Recipes" /></a>
                                     <a href="javascript:void(0);" class="sidebar_main-link" onclick="toggleSubMenu('pork')">Pork</a>
                                     <div id="porkSubMenu" style="display: none;">
                                         <ul>
-                                            <li><a href="/ribs" class="sidebar_sub-link">Ribs</a></li>
-                                            <li><a href="/shoulder" class="sidebar_sub-link">Pork Shoulder</a></li>
-                                            <li><a href="/porkchop" class="sidebar_sub-link">Pork Chop</a></li>
+                                            <li><a href="/PorkRecipes/PorkRibs" class="sidebar_sub-link">Ribs</a></li>
+                                            <li><a href="/PorkRecipes/PorkShoulder" class="sidebar_sub-link">Pork Shoulder</a></li>
+                                            <li><a href="/PorkRecipes/PorkChop" class="sidebar_sub-link">Pork Chop</a></li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="/Recipes" class="sidebar_image_link"><img class="sidebar_image" src="~/img/chicken_recipes.png" alt="Chicken Recipes" /></a>
+                                    <a href="/ChickenRecipes" class="sidebar_image_link"><img class="sidebar_image" src="~/img/chicken_recipes.png" alt="Chicken Recipes" /></a>
                                     <a href="javascript:void(0);" class="sidebar_main-link" onclick="toggleSubMenu('chicken')">Chicken</a>
                                     <div id="chickenSubMenu" style="display: none;">
                                         <ul>
-                                            <li><a href="/wings" class="sidebar_sub-link">Wings</a></li>
-                                            <li><a href="/thighs" class="sidebar_sub-link">Thighs</a></li>
-                                            <li><a href="/breasts" class="sidebar_sub-link">Breasts</a></li>
+                                        <li><a href="/ChickenRecipes/Wings" class="sidebar_sub-link">Wings</a></li>
+                                        <li><a href="/ChickenRecipes/Thighs" class="sidebar_sub-link">Thighs</a></li>
+                                        <li><a href="/ChickenRecipes/Breasts" class="sidebar_sub-link">Breasts</a></li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="/Recipes" class="sidebar_image_link"><img class="sidebar_image" src="~/img/side_recipes.png" alt="Side Recipes" /></a>
+                                    <a href="/SideRecipes" class="sidebar_image_link"><img class="sidebar_image" src="~/img/side_recipes.png" alt="Side Recipes" /></a>
                                     <a href="javascript:void(0);" class="sidebar_main-link" onclick="toggleSubMenu('sides')">Sides</a>
                                     <div id="sidesSubMenu" style="display: none;">
                                         <ul>
-                                            <li><a href="/queso" class="sidebar_sub-link">Queso</a></li>
-                                            <li><a href="/beans" class="sidebar_sub-link">Beans</a></li>
-                                            <li><a href="/macncheese" class="sidebar_sub-link">Mac N Cheese</a></li>
+                                        <li><a href="/SideRecipes/Queso" class="sidebar_sub-link">Queso</a></li>
+                                        <li><a href="/SideRecipes/Beans" class="sidebar_sub-link">Beans</a></li>
+                                        <li><a href="/SideRecipes/MacNCheese" class="sidebar_sub-link">Mac N Cheese</a></li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="/Recipes" class="sidebar_image_link"><img class="sidebar_image" src="~/img/dessert_recipes.png" alt="Dessert Recipes" /></a>
+                                    <a href="/DessertRecipes" class="sidebar_image_link"><img class="sidebar_image" src="~/img/dessert_recipes.png" alt="Dessert Recipes" /></a>
                                     <a href="javascript:void(0);" class="sidebar_main-link" onclick="toggleSubMenu('dessert')">Dessert</a>
                                     <div id="dessertSubMenu" style="display: none;">
                                         <ul>
-                                            <li><a href="/pecanpie" class="sidebar_sub-link">Pecan Pie</a></li>
+                                        <li><a href="/DessertRecipes/PecanPie" class="sidebar_sub-link">Pecan Pie</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -106,9 +110,5 @@
     <footer class="py-5 bg-dark">
         <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
     </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="~/scripts.js"></script>
 </body>
 </html>
