@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\StubbyQ.web",
+    "\\StubbyQ.web\\Pages",
+    "\\StubbyQ.web\\Pages\\Shared"
   ],
-  "SelectedNode": "\\C:\\Users\\Jonathan Stubbs\\Source\\Repos\\StubbyQ",
+  "SelectedNode": "\\StubbyQ.web\\Pages\\Shared\\_Layout.cshtml",
   "PreviewInSolutionExplorer": false
 }
