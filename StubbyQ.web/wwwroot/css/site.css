@@ -21,19 +21,13 @@ body {
   margin-bottom: 60px;
 }
 
-/*.nav-link {
-    text-decoration: none;
-    color: white;
-}
-
-.nav-link:hover {
-    color: #ffc107;*/ /* Optional hover color */
-/*}*/
-
 .sidebar_cell {
     width: 15%;
     background-color: #0a1a2f;
     vertical-align: top;
+    min-width: 160px; /* adjust as needed */
+    max-width: 200px;
+    overflow-x: hidden;
 }
 
 .sidebar_headline{
@@ -41,6 +35,10 @@ body {
 }
 
 .sidebar_image_link {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 8px;
     text-decoration: none;
 }
 
@@ -68,3 +66,7 @@ body {
     margin-top: -5px;
     text-decoration: none;
 }
+
+/*.sidebar_container {
+    white-space: nowrap;
+}*/
