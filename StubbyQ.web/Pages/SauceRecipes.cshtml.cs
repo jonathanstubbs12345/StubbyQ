@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace StubbyQ.web.Pages.PorkRecipes
+namespace StubbyQ.web.Pages
 {
-    public class PorkRibsModel : PageModel
+    public class SauceRecipesModel : PageModel
     {
         public void OnGet()
         {

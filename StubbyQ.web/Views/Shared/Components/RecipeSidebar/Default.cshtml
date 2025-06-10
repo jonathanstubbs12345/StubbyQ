@@ -1,0 +1,16 @@
+﻿@model List<StubbyQ.web.Models.RecipeCategory>
+
+<ul style="padding-left: 0; margin-left: 0;">
+    @foreach (var category in Model)
+    {
+        <li syle="margin-left: 0; padding-left: 0; list-style-type: none">
+            <a href="@category.Hyperlink" style="font-weight: bold; font-family: 'Brush Script MT', cursive; color: white; text-decoration: none;">
+                @if (!string.IsNullOrEmpty(category.RecipeLogoURL))
+                {
+                    <img src="@category.RecipeLogoURL" alt="@category.Name" style="width: 24px; height: 24px" />
+                }
+                @category.Name
+            </a>
+        </li>
+    }
+</ul>

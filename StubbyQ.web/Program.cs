@@ -1,7 +1,11 @@
+using StubbyQ.web.Components;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+builder.Services.AddTransient<RecipeSidebarViewComponent>();
 
 var app = builder.Build();
 

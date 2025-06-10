@@ -8,6 +8,7 @@ html {
   }
 }
 
+
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
@@ -21,51 +22,7 @@ body {
   margin-bottom: 60px;
 }
 
-.sidebar_cell {
-    width: 15%;
-    background-color: #0a1a2f;
-    vertical-align: top;
-    min-width: 160px; /* adjust as needed */
-    max-width: 200px;
-    overflow-x: hidden;
-}
 
-.sidebar_headline{
-    color: white;
-}
-
-.sidebar_image_link {
-    display: inline-flex;
-    align-items: center;
-    white-space: nowrap;
-    gap: 8px;
-    text-decoration: none;
-}
-
-.sidebar_image {
-    height: 30px;
-    text-decoration: none;
-    margin-left: -10px;
-}
-
-.sidebar_main-link {
-    font-family: 'Brush Script MT', cursive;
-    color: white;
-    font-weight: bold;
-    font-size: 1.5rem;
-    text-decoration: none;
-}
-
-.sidebar_sub-link {
-    font-family: 'Segoe UI', sans-serif;
-    color: white;
-    /*    font-weight: bold;*/
-    font-size: 1rem;
-    text-decoration: none;
-    /*    margin-left: 30px;*/
-    margin-top: -5px;
-    text-decoration: none;
-}
 
 /*.sidebar_container {
     white-space: nowrap;
